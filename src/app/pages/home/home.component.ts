@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import dataFake from '../../data/dataFake.json'
+import { Articles } from 'src/app/models/articles';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  articles: Articles
 
-  ngOnInit(): void {}
+  constructor() {
+    this.articles = dataFake
+  }
+
+  ngOnInit(): void {
+
+  }
 }
