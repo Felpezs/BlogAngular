@@ -7,17 +7,17 @@
 <div class="container__articles">
   <div class="articles__main">
     <app-big-card
-      Id="{{ articles.bigCard.id }}"
-      cardTitle="{{ articles.bigCard.title }}"
-      cardDescription="{{ articles.bigCard.description }}"
-      photoCover="{{ articles.bigCard.photoCover }}"
-      date="{{ articles.bigCard.date }}"
+      Id="{{ bgCard.id }}"
+      cardTitle="{{ bgCard.title }}"
+      cardDescription="{{ bgCard.description }}"
+      photoCover="{{ bgCard.photoCover }}"
+      date="{{ bgCard.date }}"
     ></app-big-card>
   </div>
   <div class="articles__other">
     <app-small-card
-      *ngFor="let article of articles.smallCard"
-      id="{{ article.id }}"
+      *ngFor="let article of smCards"
+      Id="{{ article.id }}"
       cardTitle="{{ article.title }}"
       photoCover="{{ article.photoCover }}"
       date="{{ article.date }}"

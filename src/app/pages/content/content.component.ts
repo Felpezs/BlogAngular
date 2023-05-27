@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { dataFake } from '../../data/dataFake';
+import { Card } from '../../models/card';
+import dataFake from '../../data/dataFake.json';
 
 @Component({
   selector: 'app-content',
@@ -21,9 +22,10 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id: string | null) {
-    const result = dataFake.filter(article => article.id == id)[0];
+    const result = dataFake.articles.filter((article) => article.id === id)[0]
+    
     this.contentTitle = result.title;
-    this.contentDescription = result.description
-    this.photoCover = result.photoCover
+    this.contentDescription = result.description;
+    this.photoCover = result.photoCover;
   }
 }

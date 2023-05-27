@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import dataFake from '../../data/dataFake.json'
-import { Articles } from 'src/app/models/articles';
+import opinionArticles from '../../data/opinionArticles.json'
+import { Card } from 'src/app/models/card';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,14 @@ import { Articles } from 'src/app/models/articles';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  articles: Articles
+  smCards: Array<Card>
+  bgCard: Card
+  opinionCards: Array<Card> | Array<Card & {author: string}>
 
   constructor() {
-    this.articles = dataFake
+    this.smCards = dataFake.articles.filter((article) => article.type === 'smArticle')
+    this.bgCard = dataFake.articles.filter((article) => article.type === 'bgArticle')[0]
+    this.opinionCards = opinionArticles.articles
   }
 
   ngOnInit(): void {

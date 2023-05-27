@@ -1,9 +1,6 @@
-import {Card} from './card'
+import { Card } from './card';
 
 export type Articles = {
-  bigCard: Card,
-  smallCard: Array<Card>
-
   //Estendendo o tipo opinionCard com a variavel autor
-  opinionCards: Array<Card & {author: string}>
-}
+  articles: Array<Card> | Array<Card & { author: string }>;
+};
