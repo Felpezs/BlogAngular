@@ -2,6 +2,9 @@
   <div class="big-card__picture">
     <img src="{{ photoCover }}" alt="" srcset="" height="200px" />
   </div>
+  <div class="small-card__date">
+    <p class="date">{{date}}</p>
+  </div>
   <div class="big-card__title">
     <h1>
       <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
@@ -9,7 +12,7 @@
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">
+      <a [routerLink]="['content', Id]">
         {{ cardDescription }}
       </a>
     </p>

@@ -1,0 +1,35 @@
+.container__opinion-card{
+  margin-left: 30px;
+}
+
+.opinion-card__photo{
+  margin-bottom: 10px;
+}
+
+.opinion-card__photo > img{
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.opinion-card__content{
+  width: 300px;
+}
+
+.content__description > p{
+  text-align: justify;
+  color: grey;
+}
+
+.content__title{
+  margin: 5px 0;
+}
+
+.content__author{
+  margin-top: 5px;
+  text-align: end;
+}
+
+.author__highlight{
+  font-weight: bold;
+}

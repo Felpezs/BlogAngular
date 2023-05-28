@@ -13,7 +13,5 @@ export class SmallCardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.Id)
-  }
+  ngOnInit(): void {}
 }

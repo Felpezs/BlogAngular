@@ -1,0 +1,26 @@
+<div class="container__opinion-card">
+  <div class="opinion-card__photo">
+    <img src="{{ photoCover }}" alt="opinion card photo" srcset="" />
+  </div>
+  <div class="opinion-card__content">
+    <div class="content__date">
+      <p class="date">{{ date }}</p>
+      <p></p>
+    </div>
+    <div class="content__title">
+      <h3>
+        <a [routerLink]="['content', Id]">{{ title }}</a>
+      </h3>
+    </div>
+    <div class="content__description">
+      <p>
+        {{ description }}
+      </p>
+    </div>
+    <div class="content__author">
+      <p>
+        Por: <span class="author__highlight">{{ author }}</span>
+      </p>
+    </div>
+  </div>
+</div>

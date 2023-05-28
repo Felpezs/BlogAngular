@@ -11,7 +11,7 @@ import { Card } from 'src/app/models/card';
 export class HomeComponent implements OnInit {
   smCards: Array<Card>
   bgCard: Card
-  opinionCards: Array<Card> | Array<Card & {author: string}>
+  opinionCards: Array<Card & {author: string}>
 
   constructor() {
     this.smCards = dataFake.articles.filter((article) => article.type === 'smArticle')

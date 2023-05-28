@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Card } from '../../models/card';
+import opinionArticles from '../../data/opinionArticles.json';
 import dataFake from '../../data/dataFake.json';
+import { Card } from 'src/app/models/card';
 
 @Component({
   selector: 'app-content',
@@ -22,8 +23,14 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id: string | null) {
-    const result = dataFake.articles.filter((article) => article.id === id)[0]
-    
+    let result: Card | (Card & { author: string }) = dataFake.articles.filter(
+      (article) => article.id === id
+    )[0];
+    if (result == null) {
+      result = opinionArticles.articles.filter(
+        (article) => article.id === id
+      )[0];
+    }
     this.contentTitle = result.title;
     this.contentDescription = result.description;
     this.photoCover = result.photoCover;

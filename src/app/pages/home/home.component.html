@@ -6,21 +6,34 @@
 
 <div class="container__articles">
   <div class="articles__main">
-    <app-big-card
-      Id="{{ bgCard.id }}"
-      cardTitle="{{ bgCard.title }}"
-      cardDescription="{{ bgCard.description }}"
-      photoCover="{{ bgCard.photoCover }}"
-      date="{{ bgCard.date }}"
-    ></app-big-card>
+    <div class="main__highlighted">
+      <app-big-card
+        Id="{{ bgCard.id }}"
+        cardTitle="{{ bgCard.title }}"
+        cardDescription="{{ bgCard.description }}"
+        photoCover="{{ bgCard.photoCover }}"
+        date="{{ bgCard.date }}"
+      ></app-big-card>
+    </div>
+    <div class="main__other">
+      <app-small-card
+        *ngFor="let article of smCards"
+        Id="{{ article.id }}"
+        cardTitle="{{ article.title }}"
+        photoCover="{{ article.photoCover }}"
+        date="{{ article.date }}"
+      ></app-small-card>
+    </div>
   </div>
-  <div class="articles__other">
-    <app-small-card
-      *ngFor="let article of smCards"
-      Id="{{ article.id }}"
-      cardTitle="{{ article.title }}"
+  <div class="articles__opinion">
+    <app-opinion-card
+      *ngFor="let article of opinionCards"
+      Id="{{article.id}}"
       photoCover="{{ article.photoCover }}"
+      title="{{ article.title }}"
+      description="{{ article.description }}"
+      author="{{ article.author }}"
       date="{{ article.date }}"
-    ></app-small-card>
+    ></app-opinion-card>
   </div>
 </div>

@@ -2,35 +2,27 @@
   "articles":[
     {
       "id": "5",
-      "title": "Novas séries da Marvel são anunciadas no Disney+",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aperiam quidem fugiat nisi eius odit iste accusantium laudantium inventore. Voluptate illo repellat non expedita voluptates facilis, cum id necessitatibus quibusdam.",
-      "photoCover": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/7ec0067a-460f-11ec-aa6e-9587410378a2/marvel-disney-plus-shows.jpg",
-      "date": "23/04/2023",
-      "author": "Marcos"
+      "title": "É O FIM DE NESKWGA ?",
+      "description": "A derrota para a W7M na final do último Major de Rainbow Six Siege pode ter impactado na vida do pro-player da Team Liquid",
+      "photoCover": "https://pbs.twimg.com/media/EzHdXnmXEAE5IF5.jpg:large",
+      "date": "07/05/2023",
+      "author": "Marcos Castro"
     },
     {
       "id": "6",
-      "title": "Novas séries da Marvel são anunciadas no Disney+",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aperiam quidem fugiat nisi eius odit iste accusantium laudantium inventore. Voluptate illo repellat non expedita voluptates facilis, cum id necessitatibus quibusdam.",
-      "photoCover": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/7ec0067a-460f-11ec-aa6e-9587410378a2/marvel-disney-plus-shows.jpg",
-      "date": "23/04/2023",
-      "author": "Marcos"
+      "title": "A região brasileira de LoL é a mais fraca de todas ?",
+      "description": "A falta de avanço das equipes brasileiras nos campeonatos indica problemas na liga",
+      "photoCover": "https://i0.wp.com/geekpopnews.com.br/wp-content/uploads/2023/05/Derrota-LOL.jpg?resize=855%2C481&ssl=1",
+      "date": "03/05/2023",
+      "author": "Amanda Braga"
     },
     {
       "id": "7",
-      "title": "Novas séries da Marvel são anunciadas no Disney+",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aperiam quidem fugiat nisi eius odit iste accusantium laudantium inventore. Voluptate illo repellat non expedita voluptates facilis, cum id necessitatibus quibusdam.",
-      "photoCover": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/7ec0067a-460f-11ec-aa6e-9587410378a2/marvel-disney-plus-shows.jpg",
-      "date": "23/04/2023",
-      "author": "Marcos"
-    },
-    {
-      "id": "8",
-      "title": "Novas séries da Marvel são anunciadas no Disney+",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aperiam quidem fugiat nisi eius odit iste accusantium laudantium inventore. Voluptate illo repellat non expedita voluptates facilis, cum id necessitatibus quibusdam.",
-      "photoCover": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/7ec0067a-460f-11ec-aa6e-9587410378a2/marvel-disney-plus-shows.jpg",
-      "date": "23/04/2023",
-      "author": "Marcos"
+      "title": "A Vitality mereceu ganhar o último Major de CS:GO ?",
+      "description": "O time de grandes astros como Dupreeh, Magisk e a estrela Zywoo ganharam de 2x0 contra o time GamerLegion",
+      "photoCover": "https://imageio.forbes.com/specials-images/imageserve/646a4f5e91632d6834a9f273/Vitality-celebrate-winning-the-BLAST-Paris-Major/960x0.jpg?format=jpg&width=960",
+      "date": "21/05/2023",
+      "author": "Pedro Menezes"
     }
   ]
 }
